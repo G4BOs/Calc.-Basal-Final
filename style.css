@@ -28,7 +28,7 @@ width: 100%;}
 #scx2000{display: block;}
 
 /*Caja contenedora de info*/
-#cajainfo{display: none;z-index: 2;position: absolute;background-color: #000020;margin: auto;inset: 0;}
+#cajainfo{display: none;z-index: 2;position: absolute;background-color: #000020;margin: auto;inset: 0;text-align: center;}
 #verinfo{display: block;}
 #ocinfo{display: block;}
 #verinfo:hover{cursor: pointer;background-color: rgba(250, 250, 250, 0.25);}

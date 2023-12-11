@@ -23,8 +23,12 @@ OCINFO.addEventListener('click',()=>{
 //Calculadora
 
 const CALCULAR = document.getElementById('calcular');
+const INPUT = document.getElementById('peso');
 
-CALCULAR.addEventListener('click', ()=>{
+INPUT.addEventListener('keyup',calcular);
+CALCULAR.addEventListener('click',calcular);
+
+function calcular(){
     const PESO = document.getElementById('peso').valueAsNumber;
 if (PESO>0){ERROR.style.display='none';
 if(PESO>30){let sc = (((PESO*4)+7)/(PESO+90));
@@ -87,7 +91,7 @@ else {
     ERROR.style.display='block';
     RESULTADO.style.display='none';
 }
-})
+}
 
 //Funciones
 
