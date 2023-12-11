@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Basal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="calculadora">
+            <h1>Calculadora Basal</h1>
+            <input type="number" placeholder="Peso en Kg">
+            <p id="error">*Introduzca los datos</p>
+            <button id="calcular">CALCULAR</button>
+            <div id="resultadocaja">
+                <p id="voldia">Volumen Diario</p>
+                <p id="man">Mantenimiento</p>
+                <p id="medman">Medio Mantenimiento</p>
+                <p id="scx1500">Superficie corporal x1500</p>
+                <p id="scx2000">Superficie corporal x2000</p>
+            </div>
+        </div>
+        <div id="cajainfo">
+            <div id="verinfo"><h3>^ ¿Como se calcula? ^</h3></div>
+            <div id="ocinfo"><h3>v Ocultar info v</h3></div>
+            <div id="info">
+                <h1>¿Cómo se calcula?</h1>
+                <h4>Método Holliday-Segar</h4>
+                <ul id="hollidaysegarinfo">
+                    <li>Cuando el niño tiene hasta 10kg: 100cc por cada kilo.</li>
+                    <li>Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.</li>
+                    <li>Finalmente, por cada kilo arriba de 20kg se suman 20cc.
+                    </li>
+                </ul>
+                <h4>Metodo de Superficie corporal</h4>
+                <ul id="supcorporalinfo">
+                    <li>Cuando el niño pesa mas de 30kg, se utiliza un cálculo diferente:</li>
+                    <li>Superficie corporal = ( (peso * 4) + 7) / (peso + 90)</li>
+                    <li>Este resultado se multiplica por 1500 o por 2000 para hallar el valor del volumen diario en cc, y el medico decide cual de los dos resultados utilizar.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
