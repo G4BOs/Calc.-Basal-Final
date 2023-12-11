@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9 ,user-scalable=no, maximun-scale=1.0, minimun-scale=1.0" >
     <title>Calculadora Basal</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -11,9 +11,10 @@
     <div id="contenedor">
         <div id="calculadora">
             <h1>Calculadora Basal</h1>
-            <input type="number" placeholder="Peso en Kg">
-            <p id="error">*Introduzca los datos</p>
+            <input id="peso" type="number" placeholder="Peso en Kg">
             <button id="calcular">CALCULAR</button>
+            <div id="auxerror"><p id="error">*Introduzca los datos</p></div>
+            <div id="auxres">
             <div id="resultadocaja">
                 <p id="voldia">Volumen Diario</p>
                 <p id="man">Mantenimiento</p>
@@ -22,8 +23,10 @@
                 <p id="scx2000">Superficie corporal x2000</p>
             </div>
         </div>
-        <div id="cajainfo">
+        </div>
+        <div id="btnYinfo">
             <div id="verinfo"><h3>^ ¿Como se calcula? ^</h3></div>
+        <div id="cajainfo">
             <div id="ocinfo"><h3>v Ocultar info v</h3></div>
             <div id="info">
                 <h1>¿Cómo se calcula?</h1>
@@ -40,6 +43,7 @@
                     <li>Superficie corporal = ( (peso * 4) + 7) / (peso + 90)</li>
                     <li>Este resultado se multiplica por 1500 o por 2000 para hallar el valor del volumen diario en cc, y el medico decide cual de los dos resultados utilizar.</li>
                 </ul>
+            </div>
             </div>
         </div>
     </div>
